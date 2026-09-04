@@ -1,7 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700;800&display=swap");
 
-.body {
-  font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  /* color: #fff; */
+}
+
+header {
+  background: #202846;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  padding-left: 70px;
+  height: auto;
+  width: 80px;
+}
+
+header nav {
+  float: right;
+  width: 70%;
+  position: relative;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+header nav ul li a {
   color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal-account {
+  text-align: center;
+  padding: 0 28px;
+}
+
+.language {
+  display: flex;
+}
+
+.language li {
+}
+
+.globe img {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: #fff;
+}
+
+.main-page {
+  margin: 0 80px;
+}
+
+footer {
+  background: #202846;
+  color: #fff;
+}
+
+footer h3 {
+  font-size: 36px;
 }

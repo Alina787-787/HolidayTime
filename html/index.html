@@ -3,20 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="main">
-      <header class="container">
-        <span class="logo"></span>
+      <header>
+        <span class="logo"> <img src="../images/logo.svg" alt="" /></span>
         <nav>
           <ul>
             <li class="active"><a href="">ГОЛОВНА</a></li>
+            <div class="divider"></div>
             <li><a href="">ПРО НАС</a></li>
+            <div class="divider"></div>
             <li><a href="">ЗАБРОНЮВАТИ</a></li>
+            <div class="divider"></div>
             <li><a href="">КОНТАКТИ</a></li>
-            <li><a href="">ОСОБИСТИЙ КАБІНЕТ</a></li>
-            <li><a href="">UA</a></li>
+            <div class="divider"></div>
+            <div class="personal-account">
+              <li>
+                <a href=""
+                  >ОСОБИСТИЙ <br />
+                  КАБІНЕТ</a
+                >
+              </li>
+            </div>
+            <div class="divider"></div>
+            <div class="language">
+              <div class="globe">
+                <img src="/images/globe.svg" alt="" />
+              </div>
+              <li><a href="">UA</a></li>
+            </div>
           </ul>
         </nav>
       </header>
@@ -50,12 +68,21 @@
             <div class="inline">
               <div>
                 <label>Ім’я</label>
-                <input type="Введіть ім’я" />
+                <input type="name" placeholder="Введіть ім’я" />
               </div>
+              <div>
+                <label>Номер телефону</label>
+                <input type="tel" placeholder="Введіть номер телефону" />
+              </div>
+              <button>Запросити виклик</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+
+    <footer>
+      <h4>© 2021 HolidayTime. All rights reserved.</h4>
+    </footer>
   </body>
 </html>
