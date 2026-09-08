@@ -37,16 +37,17 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   list-style: none;
+  gap: 34px;
   padding: 0;
   margin: 0;
 }
 
 header nav ul li {
-  flex: 1;
+  flex: none;
   text-align: center;
 }
 
@@ -62,18 +63,49 @@ header nav ul li a {
 }
 
 .language {
+  position: relative;
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.language li {
+.language-current {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.globe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .globe img {
   width: 40px;
   height: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+}
+
+.language-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #202846;
+  text-align: center;
+}
+
+.language-list div {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-list div:hover {
+  background: #3e4d81;
 }
 
 .ua a {
@@ -84,6 +116,7 @@ header nav ul li a {
   width: 1px;
   height: 40px;
   background: #fff;
+  flex-shrink: 0;
 }
 
 .main-page {
