@@ -67,6 +67,7 @@ header nav ul li a {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #fff;
 }
 
 .language-current {
@@ -91,8 +92,8 @@ header nav ul li a {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  transform: translateX(28%);
   background: #202846;
   text-align: center;
 }
@@ -120,7 +121,78 @@ header nav ul li a {
 }
 
 .main-page {
-  margin: 0 80px;
+  margin: 0 108px;
+}
+
+.first-poster {
+  background: url("/images/holiday-time.png") no-repeat center center;
+  background-size: cover;
+  margin-top: 30px;
+  height: 369px;
+}
+
+.first-poster h2,
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.first-poster h2 {
+  font-size: 55px;
+  font-weight: 700;
+  padding-top: 110px;
+}
+
+.first-poster h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.second-poster {
+  background: url("/images/brown-home.png");
+  height: 604px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.second-poster button {
+  background-color: #202846;
+  color: #fff;
+  position: absolute;
+  right: 244px;
+  bottom: 142px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.second-poster .arrow {
+  width: 28px;
+  height: auto;
+}
+
+.text {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 167px;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.text p {
+  font-size: 20px;
+  font-style: italic;
 }
 
 footer {
