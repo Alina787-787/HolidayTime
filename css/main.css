@@ -12,6 +12,7 @@ a {
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  background: #dcdcdc;
   /* color: #fff; */
 }
 
@@ -193,6 +194,104 @@ h3 {
 .text p {
   font-size: 20px;
   font-style: italic;
+}
+
+.three-poster {
+  background: #c1c1c3;
+  height: 412px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.couple img {
+  height: 350px;
+  width: 580px;
+}
+
+.couple-text {
+  background: #eaeaeb;
+  height: 349px;
+  width: 520px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.couple-text p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.contact-us {
+  background: #f2eeee;
+  height: 400px;
+  width: 440px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.contact-us h3 {
+  font-size: 28px;
+  align-items: center;
+  color: #414141;
+  padding-top: 12px;
+}
+
+.contact-us .inline {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us form div {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+}
+
+.contact-us input,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  color: #d9d9d9;
+  font-family: "PT Sans", sans-serif;
+}
+
+.contact-us label {
+  padding-bottom: 14px;
+}
+
+.name {
+  font-size: 20px;
+  color: #323236;
+}
+
+.phone {
+  font-size: 20px;
+  color: #323236;
+}
+
+.contact-us button {
+  background: #444765;
+  width: 440px;
+  height: 70px;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+  bottom: 0;
 }
 
 footer {
