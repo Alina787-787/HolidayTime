@@ -13,7 +13,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   background: #dcdcdc;
-  /* color: #fff; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -246,7 +248,6 @@ h3 {
 .contact-us .inline {
   padding-top: 40px;
   padding-right: 40px;
-  padding-left: 40px;
 }
 
 .contact-us form {
@@ -261,7 +262,7 @@ h3 {
 }
 
 .contact-us input,
-button {
+call-button {
   width: 100%;
   box-sizing: border-box;
   padding: 12px;
@@ -276,14 +277,17 @@ button {
 .name {
   font-size: 20px;
   color: #323236;
+  padding-bottom: 14px;
+  padding-left: 40px;
 }
 
 .phone {
   font-size: 20px;
   color: #323236;
+  padding-left: 40px;
 }
 
-.contact-us button {
+.contact-us .call-btn {
   background: #444765;
   width: 440px;
   height: 70px;
@@ -291,14 +295,80 @@ button {
   margin-top: 10px;
   border: none;
   color: #fff;
-  bottom: 0;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contacts {
+  background: #c6c6dc;
+  height: 100px;
+}
+
+.contacts h3 {
+  color: #202846;
+  font-size: 38px;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 180px;
+}
+
+.contact-title {
+  display: inline-block;
+  border-bottom: 1px solid #202846;
+  padding-bottom: 3px;
+  margin: 0 0 5px 0;
+  font-size: 22px;
+}
+
+.info {
+  margin: 30px 300px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numer a,
+.email a,
+.addresses a {
+  display: block;
+  color: #000000;
+}
+
+.numer a,
+.email a,
+.addresses a,
+.hours {
+  font-size: 20px;
+}
+
+.addresses {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.contact-map iframe {
+  border-radius: 20px;
 }
 
 footer {
   background: #202846;
   color: #fff;
+  height: 40px;
+  padding-top: 10px;
+  margin-top: auto;
 }
 
-footer h3 {
-  font-size: 36px;
+footer h4 {
+  font-size: 19px;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 50px;
 }
