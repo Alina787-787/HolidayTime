@@ -300,12 +300,12 @@ call-button {
   font-weight: 400;
 }
 
-.contacts {
+.block {
   background: #c6c6dc;
   height: 100px;
 }
 
-.contacts h3 {
+.block h3 {
   color: #202846;
   font-size: 38px;
   font-family: "PT Sans", sans-serif;
@@ -355,6 +355,51 @@ call-button {
 
 .contact-map iframe {
   border-radius: 20px;
+}
+
+nav li.active a {
+  color: #98acf5;
+}
+
+.about-intro {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/about-intro.jpg") center / cover no-repeat;
+  height: 217px;
+  width: 85%;
+  margin: 14px auto;
+}
+
+.about-intro h3 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  padding-top: 24px;
+}
+
+.about-intro p {
+  color: #fff;
+  font-size: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.about-content {
+  background: #cbcbcb;
+  height: 340px;
+  width: 85%;
+  margin: 14px auto;
+}
+
+.about-content p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #202846;
+  padding-top: 42px;
+  margin: 0 42px;
 }
 
 footer {
