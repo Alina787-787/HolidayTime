@@ -480,12 +480,17 @@ nav li.active a {
   align-items: center;
   margin: 0 auto;
   display: flex;
-  padding-left: 80px;
+  /* padding-left: 80px; */
   height: 300px;
+  margin-bottom: 20px;
+}
+
+.location-image {
+  padding-left: 60px;
 }
 
 .location-description {
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .place {
@@ -493,21 +498,64 @@ nav li.active a {
 }
 
 .place h4 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   font-style: italic;
   color: #353c57;
 }
 
+.place h4 {
+  /* padding-top: 30px; */
+  border-bottom: none;
+}
+
+.place h4::after {
+  content: "";
+  display: block;
+  width: calc(100% + 360px);
+  height: 3px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
 .place img {
   height: 30px;
   width: 30px;
-  padding-left: 430px;
+  padding-left: 370px;
   padding-bottom: 30px;
 }
 
 .location-info {
-  height: 184px;
+  height: 190px;
+  width: 560px;
+  background: #d7d7dd;
+  z-index: 1;
+  margin-top: 10px;
+  position: relative;
+}
+
+.location-info p {
+  color: #202846;
+  text-align: center;
+  padding: 40px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.location-description button {
+  background: #202846;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  transform: translateY(-40px);
+  margin-left: 500px;
 }
 
 footer {
