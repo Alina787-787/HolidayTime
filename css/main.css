@@ -495,6 +495,10 @@ nav li.active a {
 
 .place {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
 .place h4 {
@@ -502,6 +506,9 @@ nav li.active a {
   font-weight: 700;
   font-style: italic;
   color: #353c57;
+  white-space: nowrap;
+  margin: 0;
+  flex: 1;
 }
 
 .place h4 {
@@ -512,7 +519,7 @@ nav li.active a {
 .place h4::after {
   content: "";
   display: block;
-  width: calc(100% + 360px);
+  width: 560px;
   height: 3px;
   background-color: #fff;
   margin-top: 5px;
@@ -521,8 +528,12 @@ nav li.active a {
 .place img {
   height: 30px;
   width: 30px;
-  padding-left: 370px;
-  padding-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transform: translateY(-20px);
 }
 
 .location-info {
@@ -554,8 +565,12 @@ nav li.active a {
   cursor: pointer;
   z-index: 2;
   position: absolute;
-  transform: translateY(-40px);
   margin-left: 500px;
+  transform: translateY(-34px);
+}
+
+.places {
+  margin-bottom: 50px;
 }
 
 footer {
@@ -572,4 +587,27 @@ footer h4 {
   font-style: italic;
   font-weight: 400;
   padding-left: 50px;
+}
+
+#scrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 300px;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #555768;
+  color: #fff;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollToTop:hover {
+  background-color: #202846;
 }

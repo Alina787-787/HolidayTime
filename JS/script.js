@@ -20,3 +20,16 @@ items.forEach(function (item) {
     dropdown.classList.remove("open");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollToTop");
+
+  if (scrollButton) {
+    scrollButton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+});
