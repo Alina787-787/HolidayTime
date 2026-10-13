@@ -611,3 +611,124 @@ footer h4 {
 #scrollToTop:hover {
   background-color: #202846;
 }
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 110px;
+  height: 40px;
+  margin: 30px 0 40px 100px;
+  background-color: #202846;
+  color: #fff;
+  border: none;
+  border-radius: 45px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.back-button .back {
+  padding-right: 12px;
+}
+
+.back-button:hover {
+  background-color: #353f60;
+}
+
+.back-arrow {
+  font-size: 24px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+/* Загальний блок */
+.karpaty-informations {
+  width: 90%;
+  margin: 10px 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto auto; */
+  column-gap: 5px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+/* Ліва частина */
+.left-block {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 5px;
+  min-width: 0;
+  margin-right: -16px;
+  padding-right: 0;
+}
+
+/* Перше фото — велике */
+.left-block img:first-child {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Друге фото зліва */
+.left-block img:last-child {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Права частина */
+.right-block {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+  margin-left: 0;
+  padding-left: 0;
+  transform: translateX(-110px);
+}
+
+/* Опис над двома фото */
+.cabin-description {
+  width: 100%;
+  min-height: 338px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #d7d7dd;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cabin-description p {
+  margin: 0;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* Два фото в один ряд */
+.cabin-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+}
+
+.cabin-images img {
+  width: 100%;
+  height: 228px;
+  object-fit: cover;
+  display: block;
+  min-width: 0;
+}
