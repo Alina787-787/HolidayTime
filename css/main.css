@@ -732,3 +732,143 @@ footer h4 {
   display: block;
   min-width: 0;
 }
+
+/* ===== Блок наявності місць ===== */
+
+.availability-section {
+  width: 85%;
+  margin: 25px auto 30px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+}
+
+/* Заголовок */
+
+.availability-title {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #202846;
+}
+
+/* Сірий контейнер */
+
+.availability-box {
+  width: 100%;
+  min-height: 195px;
+  padding: 18px 25px;
+  box-sizing: border-box;
+  background-color: #ceced8;
+}
+
+/* Запитання */
+
+.availability-question {
+  margin: 0 0 18px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* Форма */
+
+.availability-form {
+  display: grid;
+  grid-template-columns: 1fr 225px;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Ліва частина форми */
+
+.availability-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 18px;
+  align-items: start;
+}
+
+/* Поля дат */
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.date-field label {
+  font-size: 16px;
+}
+
+.date-field input {
+  width: 50%;
+  height: 39px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border: 1px solid #b8b8b8;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #555;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+/* Кількість номерів і гостей */
+
+.guests-fields {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.guest-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guest-field label {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.guest-field input {
+  width: 43px;
+  height: 36px;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid #b8b8b8;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #30384f;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Кнопка перевірки */
+
+.availability-button {
+  width: 100%;
+  min-height: 68px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 0;
+  background-color: #2b365c;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+  cursor: pointer;
+  align-self: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  transform: translateX(-70px);
+}
+
+.availability-button:hover {
+  background-color: #35446d;
+}

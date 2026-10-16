@@ -80,9 +80,83 @@
           </div>
         </div>
       </div>
+
+      <div class="room-availability">
+        <section class="availability-section">
+          <h2 class="availability-title">Наявність місць</h2>
+
+          <div class="availability-box">
+            <p class="availability-question">
+              Коли б Ви хотіли зупинитись в помешканні Полонини Карпат?
+            </p>
+
+            <form class="availability-form">
+              <div class="availability-fields">
+                <div class="date-field">
+                  <label for="check-in">Дата заїзду</label>
+                  <input type="date" id="check-in" name="check-in" required />
+                </div>
+
+                <!-- Дата виїзду -->
+                <div class="date-field">
+                  <label for="check-out">Дата виїзду</label>
+                  <input type="date" id="check-out" name="check-out" required />
+                </div>
+
+                <!-- Кількість гостей -->
+                <div class="guests-fields">
+                  <div class="guest-field">
+                    <label for="rooms">Номери</label>
+                    <input
+                      type="number"
+                      id="rooms"
+                      name="rooms"
+                      min="1"
+                      value="1"
+                      required
+                    />
+                  </div>
+
+                  <div class="guest-field">
+                    <label for="adults">Дорослі</label>
+                    <input
+                      type="number"
+                      id="adults"
+                      name="adults"
+                      min="1"
+                      value="2"
+                      required
+                    />
+                  </div>
+
+                  <div class="guest-field">
+                    <label for="children">Діти</label>
+                    <input
+                      type="number"
+                      id="children"
+                      name="children"
+                      min="0"
+                      value="0"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Кнопка -->
+              <button type="submit" class="availability-button">
+                Перевірити наявність вільних місць
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="room-table"></div>
     </div>
     <footer>
       <h4>© 2021 HolidayTime. All rights reserved.</h4>
     </footer>
+    <button id="scrollToTop" aria-label="Прокручувати вгору">↑</button>
   </body>
 </html>
