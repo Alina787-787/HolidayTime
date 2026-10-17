@@ -94,16 +94,39 @@
               <div class="availability-fields">
                 <div class="date-field">
                   <label for="check-in">Дата заїзду</label>
-                  <input type="date" id="check-in" name="check-in" required />
+
+                  <div class="date-input-wrapper">
+                    <span class="calendar-icon"
+                      ><img src="/images/calendar.svg" alt=""
+                    /></span>
+
+                    <input type="date" id="check-in" name="check-in" required />
+
+                    <span class="date-placeholder">Дата заїзду</span>
+                    <span class="date-arrow">▼</span>
+                  </div>
                 </div>
 
-                <!-- Дата виїзду -->
                 <div class="date-field">
                   <label for="check-out">Дата виїзду</label>
-                  <input type="date" id="check-out" name="check-out" required />
+
+                  <div class="date-input-wrapper">
+                    <span class="calendar-icon"
+                      ><img src="/images/calendar.svg" alt=""
+                    /></span>
+
+                    <input
+                      type="date"
+                      id="check-out"
+                      name="check-out"
+                      required
+                    />
+
+                    <span class="date-placeholder">Дата виїзду</span>
+                    <span class="date-arrow">▼</span>
+                  </div>
                 </div>
 
-                <!-- Кількість гостей -->
                 <div class="guests-fields">
                   <div class="guest-field">
                     <label for="rooms">Номери</label>
@@ -143,7 +166,6 @@
                 </div>
               </div>
 
-              <!-- Кнопка -->
               <button type="submit" class="availability-button">
                 Перевірити наявність вільних місць
               </button>
@@ -152,7 +174,28 @@
         </section>
       </div>
 
-      <div class="room-table"></div>
+      <div class="rooms-section">
+        <table class="rooms-table">
+          <thead>
+            <tr>
+              <th class="capacity-column">Вміщує</th>
+              <th class="capacity-column">Тип розміщення</th>
+              <th class="capacity-column">Ціна</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="capacity-cell">
+                <div class="people-icons">
+                  <img src="/images/people.svg" alt="" />
+                  <img src="/images/people.svg" alt="" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <footer>
       <h4>© 2021 HolidayTime. All rights reserved.</h4>
