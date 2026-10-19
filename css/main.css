@@ -905,3 +905,120 @@ footer h4 {
 .availability-button:hover {
   background-color: #35446d;
 }
+
+.rooms-section {
+  width: 85%;
+  margin: 25px auto 35px;
+}
+
+.rooms-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.rooms-table .capacity-column {
+  width: 12%;
+}
+
+.rooms-table .room-column {
+  width: 61%;
+}
+
+.rooms-table .price-column {
+  width: 27%;
+}
+
+.rooms-table thead {
+  background-color: #4c536b;
+  color: #fff;
+}
+
+.rooms-table th {
+  height: 50px;
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
+  border: 1px solid #8f98b9;
+  box-sizing: border-box;
+}
+
+.rooms-table td {
+  height: 120px;
+  padding: 15px 20px;
+  border: 1px solid #8f98b9;
+  box-sizing: border-box;
+}
+
+.capacity-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.people-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.people-icons img {
+  width: 38px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.room-cell p {
+  margin: 0 0 14px;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.bed-description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.bed-icon {
+  width: 60px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.show-prices-btn {
+  width: 190px;
+  min-height: 44px;
+  padding: 10px 15px;
+  border: none;
+  background: #687bc0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.2 ease;
+}
+
+.show-prices-btn:hover {
+  background-color: #4c65b0;
+}
+
+.rooms-table .price-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rooms-table .show-prices-btn {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

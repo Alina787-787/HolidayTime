@@ -33,3 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const scrollToTopBtn = document.getElementById("scrollToTop");
+
+if (scrollToTopBtn) {
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
