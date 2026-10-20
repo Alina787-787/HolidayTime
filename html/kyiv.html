@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../JS/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <span class="logo"> <img src="../images/logo.svg" alt="" /></span>
+        <nav>
+          <ul>
+            <li><a href="index.html">ГОЛОВНА</a></li>
+            <div class="divider"></div>
+            <li><a href="about-us.html">ПРО НАС</a></li>
+            <div class="divider"></div>
+            <li class="active"><a href="reservation.html">ЗАБРОНЮВАТИ</a></li>
+            <div class="divider"></div>
+            <li><a href="contacts.html">КОНТАКТИ</a></li>
+            <div class="divider"></div>
+            <div class="personal-account">
+              <li>
+                <a href="account.html"
+                  >ОСОБИСТИЙ <br />
+                  КАБІНЕТ</a
+                >
+              </li>
+            </div>
+            <div class="divider"></div>
+
+            <div class="language">
+              <div class="language-current">
+                <div class="globe"><img src="/images/globe.svg" alt="" /></div>
+                <span>UA</span>
+              </div>
+              <div class="language-list">
+                <div>UA</div>
+                <div>RU</div>
+                <div>EN</div>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <div class="block">
+        <h3>Бронювання будиночка в Автентичній Київщині</h3>
+      </div>
+
+      <div class="button-back">
+        <button class="back-button" onclick="history.back()">
+          <span class="back-arrow">⟵</span>
+          <span class="back">Назад</span>
+        </button>
+      </div>
+
+      <div class="karpaty-informations">
+        <div class="left-block">
+          <img src="/images/avtentychna-kyivshcyna.jpg" alt="" />
+          <img src="/images/karpaty-house-inside1.jpg" alt="" />
+        </div>
+
+        <div class="right-block">
+          <div class="cabin-description">
+            <p>
+              Автентичні будиночки Київщини поєднують традиційний український
+              стиль із сучасним комфортом. Тут на Вас чекають затишні інтер'єри,
+              природні матеріали та мальовничі краєвиди, які допоможуть забути
+              про міську метушню. <br />
+              <br />
+              Оберіть ідеальне місце для сімейного відпочинку, зустрічі з
+              друзями або спокійних вихідних серед природи, не віддаляючись
+              далеко від столиці.
+            </p>
+          </div>
+          <div class="cabin-images">
+            <img src="/images/karpaty-house-inside2.jpg" alt="" />
+            <img src="/images/karpaty-house-inside3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="room-availability">
+        <section class="availability-section">
+          <h2 class="availability-title">Наявність місць</h2>
+
+          <div class="availability-box">
+            <p class="availability-question">
+              Коли б Ви хотіли зупинитись в помешканні Автентична Київщина ?
+            </p>
+
+            <form class="availability-form">
+              <div class="availability-fields">
+                <div class="date-field">
+                  <label for="check-in">Дата заїзду</label>
+
+                  <div class="date-input-wrapper">
+                    <span class="calendar-icon"
+                      ><img src="/images/calendar.svg" alt=""
+                    /></span>
+
+                    <input type="date" id="check-in" name="check-in" required />
+
+                    <span class="date-placeholder">Дата заїзду</span>
+                    <span class="date-arrow">▼</span>
+                  </div>
+                </div>
+
+                <div class="date-field">
+                  <label for="check-out">Дата виїзду</label>
+
+                  <div class="date-input-wrapper">
+                    <span class="calendar-icon"
+                      ><img src="/images/calendar.svg" alt=""
+                    /></span>
+
+                    <input
+                      type="date"
+                      id="check-out"
+                      name="check-out"
+                      required
+                    />
+
+                    <span class="date-placeholder">Дата виїзду</span>
+                    <span class="date-arrow">▼</span>
+                  </div>
+                </div>
+
+                <div class="guests-fields">
+                  <div class="guest-field">
+                    <label for="rooms">Номери</label>
+                    <input
+                      type="number"
+                      id="rooms"
+                      name="rooms"
+                      min="1"
+                      value="1"
+                      required
+                    />
+                  </div>
+
+                  <div class="guest-field">
+                    <label for="adults">Дорослі</label>
+                    <input
+                      type="number"
+                      id="adults"
+                      name="adults"
+                      min="1"
+                      value="2"
+                      required
+                    />
+                  </div>
+
+                  <div class="guest-field">
+                    <label for="children">Діти</label>
+                    <input
+                      type="number"
+                      id="children"
+                      name="children"
+                      min="0"
+                      value="0"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="availability-button">
+                Перевірити наявність вільних місць
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="rooms-section">
+        <table class="rooms-table">
+          <thead>
+            <tr>
+              <th class="capacity-column">Вміщує</th>
+              <th class="room-column">Тип розміщення</th>
+              <th class="price-column">Ціна</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="capacity-cell">
+                <div class="people-icons">
+                  <img src="/images/people.svg" alt="" />
+                  <img src="/images/people.svg" alt="" />
+                </div>
+              </td>
+
+              <td class="room-cell">
+                <p>Двомісний номер</p>
+                <div class="bed-description">
+                  <span>1 широке двоспальне ліжко</span>
+                  <img
+                    src="/images/bed.svg"
+                    alt="двоспальне ліжко"
+                    class="bed-icon"
+                  />
+                </div>
+              </td>
+
+              <td class="price-cell">
+                <button type="button" class="show-prices-btn">
+                  Показати ціни
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <h4>© 2021 HolidayTime. All rights reserved.</h4>
+    </footer>
+    <button id="scrollToTop" aria-label="Прокручувати вгору">↑</button>
+  </body>
+</html>

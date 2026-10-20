@@ -7,32 +7,53 @@ languageCurrent.addEventListener("click", () => {
 
 const dropdown = document.querySelector(".dropdown");
 const button = document.querySelector(".dropdown-button");
-const items = document.querySelectorAll("dropdown-item");
-const buttonText = button.querySelector("span");
+const items = document.querySelectorAll(".dropdown-item");
 
-button.addEventListener("click", function () {
-  dropdown.classList.toggle("open");
-});
+if (dropdown && button) {
+  const buttonText = button.querySelector("span");
 
-items.forEach(function (item) {
-  item.addEventListener("click", function () {
-    buttonText.textContent = item.textContent;
-    dropdown.classList.remove("open");
-  });
-});
+  if (buttonText) {
+    button.addEventListener("click", function () {
+      dropdown.classList.toggle("open");
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollButton = document.getElementById("scrollToTop");
-
-  if (scrollButton) {
-    scrollButton.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+    items.forEach(function (item) {
+      item.addEventListener("click", function () {
+        buttonText.textContent = item.textContent;
+        dropdown.classList.remove("open");
       });
     });
   }
-});
+}
+
+// const dropdown = document.querySelector(".dropdown");
+// const button = document.querySelector(".dropdown-button");
+// const items = document.querySelectorAll("dropdown-item");
+// const buttonText = button.querySelector("span");
+
+// button.addEventListener("click", function () {
+//   dropdown.classList.toggle("open");
+// });
+
+// items.forEach(function (item) {
+//   item.addEventListener("click", function () {
+//     buttonText.textContent = item.textContent;
+//     dropdown.classList.remove("open");
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const scrollButton = document.getElementById("scrollToTop");
+
+//   if (scrollButton) {
+//     scrollButton.addEventListener("click", function () {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+//     });
+//   }
+// });
 
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
